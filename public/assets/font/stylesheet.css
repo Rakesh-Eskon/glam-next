@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Gilda Display';
+    src: url('GildaDisplay-Regular.eot');
+    src: local('Gilda Display'), local('GildaDisplay-Regular'),
+        url('GildaDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GildaDisplay-Regular.woff2') format('woff2'),
+        url('GildaDisplay-Regular.woff') format('woff'),
+        url('GildaDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
