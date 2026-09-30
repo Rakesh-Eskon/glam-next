@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import Image from 'next/image';
+import { basePath } from "@/lib/basePath";
 
 const Testimonial = () => {
   useEffect(() => {
@@ -24,10 +25,10 @@ const Testimonial = () => {
           <div className="col-md-3 col-sm-6 p-2">
             <article className="swiper-slide">
               <div className="animate-box video-testimonial-content fadeInUp animated" data-animate-effect="fadeInUp">
-                <a aria-label="testimonial-popup" data-fancybox="" href="assets/images/home-images/testimonial-videos/aditi.mp4">
+                <a aria-label="testimonial-popup" data-fancybox="" href={`${basePath}/assets/images/home-images/testimonial-videos/aditi.mp4`}>
                   <Image
                     className="img-fluid"
-                    src="assets/images/home-images/testimonial-videos/aditi.webp"
+                    src={`${basePath}/assets/images/home-images/testimonial-videos/aditi.webp`}
                     width={270}
                     height={463}
                     loading="lazy"
@@ -46,10 +47,10 @@ const Testimonial = () => {
           <div className="col-md-3 col-sm-6 p-2">
             <article className="swiper-slide">
               <div className="animate-box video-testimonial-content fadeInUp animated" data-animate-effect="fadeInUp">
-                <a aria-label="testimonial-popup" data-fancybox="" href="assets/images/home-images/testimonial-videos/priyanka.mp4">
+                <a aria-label="testimonial-popup" data-fancybox="" href={`${basePath}/assets/images/home-images/testimonial-videos/priyanka.mp4`}>
                   <Image
                     className="img-fluid"
-                    src="assets/images/home-images/testimonial-videos/priyanka.webp"
+                    src={`${basePath}/assets/images/home-images/testimonial-videos/priyanka.webp`}
                     width={270}
                     height={463}
                     loading="lazy"
@@ -68,10 +69,10 @@ const Testimonial = () => {
           <div className="col-md-3 col-sm-6 p-2">
             <article className="swiper-slide">
               <div className="animate-box video-testimonial-content fadeInUp animated" data-animate-effect="fadeInUp">
-                <a aria-label="testimonial-popup" data-fancybox="" href="assets/images/home-images/testimonial-videos/rachel.mp4">
+                <a aria-label="testimonial-popup" data-fancybox="" href={`${basePath}/assets/images/home-images/testimonial-videos/rachel.mp4`}>
                   <Image
                     className="img-fluid"
-                    src="assets/images/home-images/testimonial-videos/rachel.webp"
+                    src={`${basePath}/assets/images/home-images/testimonial-videos/rachel.webp`}
                     width={270}
                     height={463}
                     loading="lazy"
@@ -90,10 +91,10 @@ const Testimonial = () => {
           <div className="col-md-3 col-sm-6 p-2">
             <article className="swiper-slide">
               <div className="animate-box video-testimonial-content fadeInUp animated" data-animate-effect="fadeInUp">
-                <a aria-label="testimonial-popup" data-fancybox="" href="assets/images/home-images/testimonial-videos/sana.mp4">
+                <a aria-label="testimonial-popup" data-fancybox="" href={`${basePath}/assets/images/home-images/testimonial-videos/sana.mp4`}>
                   <Image
                     className="img-fluid"
-                    src="assets/images/home-images/testimonial-videos/sana.webp"
+                    src={`${basePath}/assets/images/home-images/testimonial-videos/sana.webp`}
                     width={270}
                     height={463}
                     loading="lazy"

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CoursesForm from "../components/CoursesForm";
+import { basePath } from "@/lib/basePath";
 
 const Page = () => {
   return (
@@ -9,7 +10,7 @@ const Page = () => {
         className="breadcrumb-section"
         style={{
           backgroundImage:
-            "url('/assets/images/courses/personal-grooming-course/banner.webp')",
+            `url('${basePath}/assets/images/courses/personal-grooming-course/banner.webp')`,
         }}
       >
         <div className="breadcrumb-container">
@@ -71,7 +72,7 @@ const Page = () => {
                   <div className="scroll-content" id="introduction">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module1.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module1.png`}
                         alt="Module 1: Introduction to Hair Styling"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -95,7 +96,7 @@ const Page = () => {
                   <div className="scroll-content" id="product-knowledge">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module2.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module2.png`}
                         alt="Module 2: Basic Hair Care"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -120,7 +121,7 @@ const Page = () => {
                   <div className="scroll-content" id="makeup-looks">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module3.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module3.png`}
                         alt="Module 3: Essential Techniques"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -144,7 +145,7 @@ const Page = () => {
                   <div className="scroll-content" id="hair-styling">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module4.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module4.png`}
                         alt="Module 4: Basic Braiding"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -169,7 +170,7 @@ const Page = () => {
                   <div className="scroll-content" id="special-topics">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module5.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module5.png`}
                         alt="Module 5: Ponytails and Updos"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -193,7 +194,7 @@ const Page = () => {
                   <div className="scroll-content" id="personal-skills">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module6.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module6.png`}
                         alt="Module 6: Bridal Hairstyles"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -217,7 +218,7 @@ const Page = () => {
                   <div className="scroll-content" id="Internship">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module7.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module7.png`}
                         alt="Module 7: Types of Buns"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -241,7 +242,7 @@ const Page = () => {
                   <div className="scroll-content" id="working-with-extensions">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module8.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module8.png`}
                         alt="Module 8: Working with Extensions"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -264,7 +265,7 @@ const Page = () => {
                   <div className="scroll-content" id="special-occasion">
                     <div className="about-img">
                       <Image
-                        src="assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module9.png"
+                        src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/course-modules/module9.png`}
                         alt="Module 9: Special Occasion Styles"
                         width={500} // Adjust based on your design
                         height={300} // Adjust based on your design
@@ -303,7 +304,7 @@ const Page = () => {
           <div className="row">
             <div className="col-md-3 p-0">
               <Image
-                src="assets/images/courses/4-weeks-professional-hair-styling-course/curriculum/1.png"
+                src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/curriculum/1.png`}
                 alt="Curriculum Image 1"
                 width={500} // Adjust the width as needed
                 height={600} // Adjust the height as needed
@@ -311,7 +312,7 @@ const Page = () => {
             </div>
             <div className="col-md-3 p-0">
               <Image
-                src="assets/images/courses/4-weeks-professional-hair-styling-course/Curriculum/2.png"
+                src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/curriculum/2.png`}
                 alt="Curriculum Image 2"
                 width={500} // Adjust the width as needed
                 height={600} // Adjust the height as needed
@@ -319,7 +320,7 @@ const Page = () => {
             </div>
             <div className="col-md-3 p-0">
               <Image
-                src="assets/images/courses/4-weeks-professional-hair-styling-course/Curriculum/3.png"
+                src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/curriculum/3.png`}
                 alt="Curriculum Image 3"
                 width={500} // Adjust the width as needed
                 height={600} // Adjust the height as needed
@@ -327,7 +328,7 @@ const Page = () => {
             </div>
             <div className="col-md-3 p-0">
               <Image
-                src="assets/images/courses/4-weeks-professional-hair-styling-course/Curriculum/4.png"
+                src={`${basePath}/assets/images/courses/4-weeks-professional-hair-styling-course/curriculum/4.png`}
                 alt="Curriculum Image 4"
                 width={500} // Adjust the width as needed
                 height={600} // Adjust the height as needed
@@ -344,7 +345,7 @@ const Page = () => {
             <div className="col-md-6">
               <div className="about-img pr-lg-2">
                 <Image
-                  src="assets/images/courses/08-Weeks-Professional-Makeup-and-Hair-Styling-Course/Certificate/completion-certificate.png"
+                  src={`${basePath}/assets/images/courses/08-Weeks-Professional-Makeup-and-Hair-Styling-Course/Certificate/completion-certificate.png`}
                   alt="Completion Certificate"
                   width={500} // Adjust the width as needed
                   height={500} // Adjust the height as needed
@@ -374,7 +375,7 @@ const Page = () => {
             <div className="col-md-6">
               <div className="certificate">
                 <Image
-                  src="assets/images/courses/08-Weeks-Professional-Makeup-and-Hair-Styling-Course/Certificate/1.webp"
+                  src={`${basePath}/assets/images/courses/08-Weeks-Professional-Makeup-and-Hair-Styling-Course/Certificate/1.webp`}
                   alt="Certificate 1"
                   width={600} // Adjust the width as needed
                   height={400} // Adjust the height as needed
@@ -384,7 +385,7 @@ const Page = () => {
             <div className="col-md-6">
               <div className="certificate">
                 <Image
-                  src="assets/images/courses/08-Weeks-Professional-Makeup-and-Hair-Styling-Course/Certificate/2.webp"
+                  src={`${basePath}/assets/images/courses/08-Weeks-Professional-Makeup-and-Hair-Styling-Course/Certificate/2.webp`}
                   alt="Certificate 2"
                   width={600} // Adjust the width as needed
                   height={400} // Adjust the height as needed
@@ -398,7 +399,7 @@ const Page = () => {
         id="footer"
         className="footer-section section-padding background-image"
         style={{
-          backgroundImage: "url('/assets/images/cta-section.png')",
+          backgroundImage: `url('${basePath}/assets/images/cta-section.webp')`,
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}

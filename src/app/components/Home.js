@@ -8,12 +8,13 @@ import Slider from "./Slider";
 import Gallery from "./Gallery";
 import Testimonial from "./Testimonial";
 import Faq from "./Faq";
+import { basePath } from "@/lib/basePath";
 
-const founderImage = "/assets/images/home-images/founder/founder.webp"; 
-const whyusImage = "/assets/images/home-images/why-us/why-us.webp";
-const aboutglamImage = "/assets/images/home-images/about/about-glamblush.webp";
-const serviceImage = "/assets/images/home-images/services/our-services.webp";
-const ctaImage = "/assets/images/cta-section.webp";
+const founderImage = `${basePath}/assets/images/home-images/founder/founder.webp`; 
+const whyusImage = `${basePath}/assets/images/home-images/why-us/why-us.webp`;
+const aboutglamImage = `${basePath}/assets/images/home-images/about/about-glamblush.webp`;
+const serviceImage = `${basePath}/assets/images/home-images/services/our-services.webp`;
+const ctaImage = `${basePath}/assets/images/cta-section.webp`;
 
 const Home = () => {
 
@@ -93,7 +94,7 @@ const Home = () => {
             <ul className="slides">
               <li className="bg-fixed" style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
                 <Image
-                  src="/assets/images/home-images/hero/banner.webp"
+                  src={`${basePath}/assets/images/home-images/hero/banner.webp`}
                   alt="Become an Certified Makeup & Hairstyling Expert"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -133,7 +134,7 @@ const Home = () => {
           <div className="video-container">
             <Image
               className="video-placeholder mobile-placeholder img-fluid"
-              src="/assets/images/home-images/video-bg2.webp"
+              src={`${basePath}/assets/images/home-images/video-bg2.webp`}
               width={360}
               height={592}
               alt="Video Thumbnail"
@@ -157,7 +158,7 @@ const Home = () => {
                 <div className="col-md-3 animate-box fadeInUp animated">
                   <div className="glamblush-award-content">
                     <Image
-                      src="/assets/images/home-images/certificate/hands-on-training.webp"
+                      src={`${basePath}/assets/images/home-images/certificate/hands-on-training.webp`}
                       className="img-fluid"
                       width={100}
                       height={100}
@@ -170,7 +171,7 @@ const Home = () => {
                 <div className="col-md-3 animate-box fadeInUp animated">
                   <div className="glamblush-award-content">
                     <Image
-                      src="/assets/images/home-images/certificate/international-certificate.webp"
+                      src={`${basePath}/assets/images/home-images/certificate/international-certificate.webp`}
                       className="img-fluid"
                       width={100}
                       height={100}
@@ -183,7 +184,7 @@ const Home = () => {
                 <div className="col-md-3 animate-box fadeInUp animated">
                   <div className="glamblush-award-content">
                     <Image
-                      src="/assets/images/home-images/certificate/guidance-on-placements.webp"
+                      src={`${basePath}/assets/images/home-images/certificate/guidance-on-placements.webp`}
                       className="img-fluid"
                       width={100}
                       height={100}
@@ -196,7 +197,7 @@ const Home = () => {
                 <div className="col-md-3 animate-box fadeInUp animated">
                   <div className="glamblush-award-content">
                     <Image
-                      src="/assets/images/home-images/certificate/guaranteed-internship.webp"
+                      src={`${basePath}/assets/images/home-images/certificate/guaranteed-internship.webp`}
                       className="img-fluid"
                       width={100}
                       height={100}
@@ -217,7 +218,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 d-mobile-none">
               <div className="about-img">
-                <Image src="/assets/images/home-images/founder/founder-mobile.webp" alt="Founder" width={370} height={370} className="img-fluid" />
+                <Image src={`${basePath}/assets/images/home-images/founder/founder-mobile.webp`} alt="Founder" width={370} height={370} className="img-fluid" />
               </div>
             </div>
             <div className="offset-md-6 col-md-6">
@@ -254,7 +255,7 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-sm-1 d-mobile-none">
               <div className="about-img">
-                <Image src="/assets/images/home-images/why-us/why-us-mobile.webp" className="img-fluid" width={370} height={303} alt="Why join Glam Blush Academy" />
+                <Image src={`${basePath}/assets/images/home-images/why-us/why-us-mobile.webp`} className="img-fluid" width={370} height={303} alt="Why join Glam Blush Academy" />
               </div>
             </div>
           </div>
@@ -273,12 +274,12 @@ const Home = () => {
           <div className="row justify-content-center">
             <div className="col-md-4 animate-box" data-animate-effect="fadeInUp">
               <div className="glamblush-certificate">
-                <Image src="/assets/images/home-images/certificate/international-certification1.webp" className="img-fluid" width={350} height={501} alt="International Certification 1" />
+                <Image src={`${basePath}/assets/images/home-images/certificate/international-certification1.webp`} className="img-fluid" width={350} height={501} alt="International Certification 1" />
               </div>
             </div>
             <div className="col-md-4 animate-box" data-animate-effect="fadeInUp">
               <div className="glamblush-certificate">
-                <Image src="/assets/images/home-images/certificate/international-certification2.webp" className="img-fluid" width={350} height={417} alt="International Certification 2" />
+                <Image src={`${basePath}/assets/images/home-images/certificate/international-certification2.webp`} className="img-fluid" width={350} height={417} alt="International Certification 2" />
               </div>
             </div>
           </div>
@@ -302,7 +303,7 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-sm-2 d-mobile-none">
               <div className="about-img m-0">
-                <Image src="/assets/images/home-images/about/about-glamblush-mobile.webp" className="img-fluid" width={370} height={330} alt="About Glam Blush" />
+                <Image src={`${basePath}/assets/images/home-images/about/about-glamblush-mobile.webp`} className="img-fluid" width={370} height={330} alt="About Glam Blush" />
               </div>
             </div>
           </div>
@@ -322,7 +323,7 @@ const Home = () => {
             {Array.from({ length: 10 }, (_, index) => (
               <div key={index} className="col-md-2 col-sm-6 p-lg-0 animate-box" data-animate-effect="fadeInUp">
                 <div className="glamblush-brands">
-                  <Image src={`/assets/images/home-images/brands/${index + 1}.webp`} className="img-fluid" width={188} height={121} alt={`Brand Item ${index + 1}`} />
+                  <Image src={`${basePath}/assets/images/home-images/brands/${index + 1}.webp`} className="img-fluid" width={188} height={121} alt={`Brand Item ${index + 1}`} />
                 </div>
               </div>
             ))}
@@ -336,7 +337,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 d-mobile-none">
               <div className="about-img">
-                <Image src="/assets/images/home-images/services/our-services-mobile.webp" className="img-fluid" width={370} height={330} alt="Our Services" />
+                <Image src={`${basePath}/assets/images/home-images/services/our-services-mobile.webp`} className="img-fluid" width={370} height={330} alt="Our Services" />
               </div>
             </div>
             <div className="offset-md-6 col-md-6">
@@ -417,8 +418,8 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="map-img">
                 <a target="_blank" rel="noreferrer noopener" aria-label="map" href="https://www.google.com/maps/place/GlamBlush+Best+Makeup+Academy+in+Mumbai/@19.174288,72.841571,14z/data=!4m6!3m5!1s0x3be7b6faeb9ac9e9:0xeb647dd47ec4bb70!8m2!3d19.1742882!4d72.8415714!16s%2Fg%2F11fxqwc1kk?hl=en-GB&entry=ttu">
-                  <Image src="/assets/images/home-images/map.webp" className="m-none" width={735} height={453} alt="Map of GlamBlush location" />
-                  <Image src="/assets/images/home-images/map2.webp" className="d-none" width={400} height={247} alt="Map of GlamBlush location" />
+                  <Image src={`${basePath}/assets/images/home-images/map.webp`} className="m-none" width={735} height={453} alt="Map of GlamBlush location" />
+                  <Image src={`${basePath}/assets/images/home-images/map2.webp`} className="d-none" width={400} height={247} alt="Map of GlamBlush location" />
                 </a>
               </div>
             </div>

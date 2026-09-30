@@ -4,13 +4,14 @@ import Counter from "./Counter";
 import Image from "next/image";
 import Testimonial from './Testimonial';
 import Services from './Services';
+import { basePath } from "@/lib/basePath";
 
 const About = () => {
   return (
     <div>
       <div
         className="breadcrumb-section about-breadcrumb"
-        style={{ backgroundImage: "url('./assets/images/about/about.webp')" }} // Ensure path correctness
+        style={{ backgroundImage: `url('${basePath}/assets/images/about/about.webp')` }} // Ensure path correctness
       >
         <div className="breadcrumb-container">
           <span className="page-name">About us</span>
@@ -23,7 +24,7 @@ const About = () => {
             <div className="col-md-6">
               <div className="about-img">
                 <Image
-                  src="assets/images/about/founder.webp"
+                  src={`${basePath}/assets/images/about/founder.webp`}
                   alt="Founder"
                   width={500} // Set the width you want the image to be
                   height={500} // Set the height you want the image to be
@@ -87,7 +88,7 @@ const About = () => {
                       <a href="#">
                         <Image
                           className="img-fluid"
-                          src="assets/images/certificate/hands-on-training.png"
+                          src={`${basePath}/assets/images/certificate/hands-on-training.png`}
                           alt="Hands-on Training"
                           width={150} // Set appropriate width
                           height={150} // Set appropriate height
@@ -101,7 +102,7 @@ const About = () => {
                       <a href="#">
                         <Image
                           className="img-fluid"
-                          src="assets/images/certificate/international-certificate.png"
+                          src={`${basePath}/assets/images/certificate/international-certificate.png`}
                           alt="International Certificate"
                           width={150} // Set appropriate width
                           height={150} // Set appropriate height
@@ -115,7 +116,7 @@ const About = () => {
                       <a href="#">
                         <Image
                           className="img-fluid"
-                          src="assets/images/certificate/guidance-on-placements.png"
+                          src={`${basePath}/assets/images/certificate/guidance-on-placements.png`}
                           alt="Guidance on Placements"
                           width={150} // Set appropriate width
                           height={150} // Set appropriate height
@@ -129,7 +130,7 @@ const About = () => {
                       <a href="#">
                         <Image
                           className="img-fluid"
-                          src="assets/images/certificate/guaranteed-internship.webp"
+                          src={`${basePath}/assets/images/certificate/guaranteed-internship.webp`}
                           alt="Guaranteed Internship"
                           width={150} // Set appropriate width
                           height={150} // Set appropriate height
@@ -145,7 +146,7 @@ const About = () => {
               <div className="about-img">
                 <Image
                   className="img-fluid"
-                  src="assets/images/about/about-glam-page.webp"
+                  src={`${basePath}/assets/images/about/about-glam-page.webp`}
                   alt="About Glam Blush"
                   width={500} // Set appropriate width
                   height={500} // Set appropriate height
@@ -183,9 +184,7 @@ const About = () => {
               >
                 <div className="glamblush-brands">
                   <Image
-                    src={`/assets/images/brands/Item${
-                      index === 0 ? "" : `-${index}`
-                    }.webp`} // Dynamic path for images
+                    src={`${basePath}/assets/images/brands/Item-${index + 1}.webp`} // Dynamic path for images
                     className="img-fluid"
                     alt={`Brand ${index + 1}`}
                     width={150} // Set appropriate width
@@ -204,7 +203,7 @@ const About = () => {
             <div className="col-md-6">
               <div className="about-img">
                 <Image
-                  src="assets/images/about/why-join-glamblush.webp" // Updated path format
+                  src={`${basePath}/assets/images/about/why-join-glamblush.webp`} // Updated path format
                   alt="Why Join Glam Blush Academy"
                   width={500} // Set appropriate width
                   height={500} // Set appropriate height
@@ -274,7 +273,7 @@ const About = () => {
             <div className="col-md-4">
               <div className="glamblush-certificate">
                 <Image
-                  src="assets/images/certificate/international-certification1.webp" // Updated image path
+                  src={`${basePath}/assets/images/certificate/international-certification1.webp`} // Updated image path
                   className="img-fluid" // Responsive styling
                   alt="International Certification 1"
                   width={400} // Set appropriate width
@@ -285,7 +284,7 @@ const About = () => {
             <div className="col-md-4">
               <div className="glamblush-certificate">
                 <Image
-                  src="assets/images/certificate/international-certification2.webp" // Updated image path
+                  src={`${basePath}/assets/images/certificate/international-certification2.webp`} // Updated image path
                   className="img-fluid" // Responsive styling
                   alt="International Certification 2"
                   width={400} // Set appropriate width
@@ -303,7 +302,7 @@ const About = () => {
         id="footer"
         className="footer-section section-padding background-image"
         style={{
-          backgroundImage: "url('/assets/images/cta-section.png')", // Updated path
+          backgroundImage: `url('${basePath}/assets/images/cta-section.webp')`, // Updated path
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}

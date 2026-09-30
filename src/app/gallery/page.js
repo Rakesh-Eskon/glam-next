@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import Image from "next/image"; // Import Image from Next.js
+import { basePath } from "@/lib/basePath";
 
 const Page = () => { // Changed 'page' to 'Page'
   useEffect(() => {
@@ -55,7 +56,7 @@ const Page = () => { // Changed 'page' to 'Page'
   return (
     <div>
       <div className="breadcrumb-section" style={{
-        backgroundImage: "url('./assets/images/gallery/gallery-banner.webp')",
+        backgroundImage: `url('${basePath}/assets/images/gallery/gallery-banner.webp')`,
       }}>
         <div className="breadcrumb-container">
           <span className="page-name">Gallery</span>
@@ -94,71 +95,71 @@ const Page = () => { // Changed 'page' to 'Page'
             {/* Bridal Look */}
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/1.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/1.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/1.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/1.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/2.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/2.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/2.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/2.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/3.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/3.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/3.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/3.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/4.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/4.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/4.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/4.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/5.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/5.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/5.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/5.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/6.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/6.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/6.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/6.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/7.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/7.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/7.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/7.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/8.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/8.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/8.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/8.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/9.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/9.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/9.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/9.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="bridal-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/bridal-look/10.webp">
-                <Image className="img-fluid" src="assets/images/gallery/bridal-look/10.webp"
+                href={`${basePath}/assets/images/gallery/bridal-look/10.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/bridal-look/10.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
@@ -166,145 +167,145 @@ const Page = () => { // Changed 'page' to 'Page'
             {/* student-work */}
             <div className="card p-0" data-name="student-work">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/1.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/1.webp"
+                href={`${basePath}/assets/images/gallery/student-work/1.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/1.webp`}
                   alt="Student Work 1" width={600} height={400} />
               </a>
             </div>
            
             <div className="card p-0" data-name="student-work">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/2.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/2.webp"
+                href={`${basePath}/assets/images/gallery/student-work/2.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/2.webp`}
                   alt="Student Work 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="student-work">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/3.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/3.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-           
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/6.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/6.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/7.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/7.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/8.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/8.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/9.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/9.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/10.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/10.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/11.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/11.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/12.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/12.webp"
-                  alt="Student Work 1" width={600} height={400} />
-              </a>
-            </div>
-            <div className="card p-0" data-name="student-work">
-              <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/13.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/13.webp"
+                href={`${basePath}/assets/images/gallery/student-work/3.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/3.webp`}
                   alt="Student Work 1" width={600} height={400} />
               </a>
             </div>
            
             <div className="card p-0" data-name="student-work">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/14.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/14.webp"
+                href={`${basePath}/assets/images/gallery/student-work/6.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/6.webp`}
                   alt="Student Work 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="student-work">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/15.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/15.webp"
+                href={`${basePath}/assets/images/gallery/student-work/7.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/7.webp`}
                   alt="Student Work 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="student-work">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/student-work/16.webp">
-                <Image className="img-fluid" src="assets/images/gallery/student-work/16.webp"
+                href={`${basePath}/assets/images/gallery/student-work/8.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/8.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/9.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/9.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/10.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/10.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/11.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/11.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/12.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/12.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/13.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/13.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+           
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/14.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/14.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/15.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/15.webp`}
+                  alt="Student Work 1" width={600} height={400} />
+              </a>
+            </div>
+            <div className="card p-0" data-name="student-work">
+              <a className="d-block glamblush-photo-item" data-fancybox="images"
+                href={`${basePath}/assets/images/gallery/student-work/16.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/student-work/16.webp`}
                   alt="Student Work 1" width={600} height={400} />
               </a>
             </div>
              {/* Celebrity */}
              <div className="card p-0" data-name="celebrity-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/celebrity-look/1.webp">
-                <Image className="img-fluid" src="assets/images/gallery/celebrity-look/1.webp"
+                href={`${basePath}/assets/images/gallery/celebrity-look/1.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/celebrity-look/1.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="celebrity-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/celebrity-look/2.webp">
-                <Image className="img-fluid" src="assets/images/gallery/celebrity-look/2.webp"
+                href={`${basePath}/assets/images/gallery/celebrity-look/2.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/celebrity-look/2.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="celebrity-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/celebrity-look/3.webp">
-                <Image className="img-fluid" src="assets/images/gallery/celebrity-look/3.webp"
+                href={`${basePath}/assets/images/gallery/celebrity-look/3.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/celebrity-look/3.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="celebrity-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/celebrity-look/4.webp">
-                <Image className="img-fluid" src="assets/images/gallery/celebrity-look/4.webp"
+                href={`${basePath}/assets/images/gallery/celebrity-look/4.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/celebrity-look/4.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="celebrity-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/celebrity-look/5.webp">
-                <Image className="img-fluid" src="assets/images/gallery/celebrity-look/5.webp"
+                href={`${basePath}/assets/images/gallery/celebrity-look/5.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/celebrity-look/5.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>
             <div className="card p-0" data-name="celebrity-look">
               <a className="d-block glamblush-photo-item" data-fancybox="images"
-                href="assets/images/gallery/celebrity-look/6.webp">
-                <Image className="img-fluid" src="assets/images/gallery/celebrity-look/6.webp"
+                href={`${basePath}/assets/images/gallery/celebrity-look/6.webp`}>
+                <Image className="img-fluid" src={`${basePath}/assets/images/gallery/celebrity-look/6.webp`}
                   alt="Bridal Look 1" width={600} height={400} />
               </a>
             </div>

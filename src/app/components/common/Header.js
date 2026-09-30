@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; // Import useRouter from next/navigation
+import { basePath } from "@/lib/basePath";
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -201,7 +202,7 @@ const Header = () => {
             <div className="col-md-4 glamblush-logo-wrap">
               <Link href="/" className="glamblush-logo" aria-label="logo">
                 <Image
-                  src="assets/images/logo/logo-white.webp" // Path relative to the public folder
+                  src={`${basePath}/assets/images/logo/logo-white.webp`} // Path relative to the public folder
                   className="img-fluid"
                   width={250}
                   height={69}

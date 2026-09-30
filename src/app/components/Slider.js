@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image'; // Import Image from Next.js
+import { basePath } from "@/lib/basePath";
 
 const Slider = () => {
   return (
@@ -40,7 +41,7 @@ const Slider = () => {
               <div className="card-content">
                 <Image
                   className="img-fluid"
-                  src="assets/images/home-images/courses/8-week.webp"
+                  src={`${basePath}/assets/images/home-images/courses/8-week.webp`}
                   width={391}
                   height={521}
                   alt="08 Weeks Professional Makeup And Hair Styling Course"
@@ -60,7 +61,7 @@ const Slider = () => {
               <div className="card-content">
                 <Image
                   className="img-fluid"
-                  src="assets/images/home-images/courses/bridal-makeup.webp"
+                  src={`${basePath}/assets/images/home-images/courses/bridal-makeup.webp`}
                   width={391}
                   height={521}
                   alt="06 Weeks Bridal Makeup And Hair Styling Course"
@@ -80,7 +81,7 @@ const Slider = () => {
               <div className="card-content">
                 <Image
                   className="img-fluid"
-                  src="assets/images/home-images/courses/4-week.webp"
+                  src={`${basePath}/assets/images/home-images/courses/4-week.webp`}
                   width={391}
                   height={521}
                   alt="04 Weeks Professional Hair Styling Course"
@@ -100,7 +101,7 @@ const Slider = () => {
               <div className="card-content">
                 <Image
                   className="img-fluid"
-                  src="assets/images/home-images/courses/weekend-professional.webp"
+                  src={`${basePath}/assets/images/home-images/courses/weekend-professional.webp`}
                   width={391}
                   height={521}
                   alt="Weekend Professional Makeup And Hair Styling Course"
@@ -120,7 +121,7 @@ const Slider = () => {
               <div className="card-content">
                 <Image
                   className="img-fluid"
-                  src="assets/images/home-images/courses/personal-grooming.webp"
+                  src={`${basePath}/assets/images/home-images/courses/personal-grooming.webp`}
                   width={391}
                   height={521}
                   alt="Personal Grooming Course"

@@ -3,6 +3,7 @@ import React from "react";
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { basePath } from "@/lib/basePath";
 
 const Services = () => {
   return (
@@ -54,7 +55,7 @@ const Services = () => {
               <div className="slider-content">
                 <div className="card__image">
                   <Image
-                    src="assets/images/about/services/bridal.webp"
+                    src={`${basePath}/assets/images/about/services/bridal.webp`}
                     alt="Bridal"
                     width={270}
                     height={350}
@@ -70,7 +71,7 @@ const Services = () => {
               <div className="slider-content">
                 <div className="card__image">
                   <Image
-                    src="assets/images/about/services/engagement.webp"
+                    src={`${basePath}/assets/images/about/services/engagement.webp`}
                     alt="Engagement"
                     width={270}
                     height={350}
@@ -86,7 +87,7 @@ const Services = () => {
               <div className="slider-content">
                 <div className="card__image">
                   <Image
-                    src="assets/images/about/services/party.webp"
+                    src={`${basePath}/assets/images/about/services/party.webp`}
                     alt="Party"
                     width={270}
                     height={350}
@@ -102,7 +103,7 @@ const Services = () => {
               <div className="slider-content">
                 <div className="card__image">
                   <Image
-                    src="assets/images/about/services/pre-wedding.webp"
+                    src={`${basePath}/assets/images/about/services/pre-wedding.webp`}
                     alt="Pre-Wedding"
                     width={270}
                     height={350}
@@ -118,7 +119,7 @@ const Services = () => {
               <div className="slider-content">
                 <div className="card__image">
                   <Image
-                    src="assets/images/about/services/sangeet.webp"
+                    src={`${basePath}/assets/images/about/services/sangeet.webp`}
                     alt="Sangeet"
                     width={270}
                     height={350}

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import React from "react";
 import Faq from "./Faq";
+import { basePath } from "@/lib/basePath";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const Contact = () => {
       <div
         className="breadcrumb-section"
         style={{
-          backgroundImage: "url('./assets/images/contact/contact-banner.webp')",
+          backgroundImage: `url('${basePath}/assets/images/contact/contact-banner.webp')`,
         }}
       >
         <div className="breadcrumb-container">
@@ -231,7 +232,7 @@ const Contact = () => {
         id="footer"
         className="footer-section background-image"
         style={{
-          background: "url('./assets/images/cta-section.webp') center center",
+          background: `url('${basePath}/assets/images/cta-section.webp') center center`,
           backgroundSize: "cover",
         }}
       >
